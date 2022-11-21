@@ -1,0 +1,13 @@
+Package: ggformat2
+Type: Package
+Title: Function to apply simple formatting of ggplot
+Version: 0.1.0
+Author: Krista Kraskura <k.kraskura@gmail.com>
+Maintainer: The package maintainer <k.kraskura@gmail.com>
+Description: Formats ggplot, very much like the theme layer on the ggplot. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Depends: 
+    ggplot2

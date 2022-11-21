@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ggformat2
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ggformat2 is to apply some very simple consistent formatting to ggplot. Just like the theme() arguments. Nothing too fancy and using it often. It has helped me to focus on the main variables first, like visualizing patterns, and not worry about formatting, axis labels [which sometimes do not look intuitive], etc. This function also has helped me to have standardised size label text and format when prepaering manuscripts.
+
+## Installation
+
+You can install the development version of ggformat2 like so:
+
+```{r
+
+install.packages("devtools") # install first if not already 
+library(devtools) # load package 
+install_github("kraskura/ggformat2")
+
+
+
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(ggformat2)
+## basic example code
+
+wavesPlot<-ggplot()+
+  geom_line(mapping = aes(x = seq(0,10,0.1), y = sin(seq(0,10,0.1))), color = "dodgerblue")
+
+ggformat(wavesPlot, y_title = "Wave", x_title = "Time", print = T, size_text = 15)
+
+```
