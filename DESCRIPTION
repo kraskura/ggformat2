@@ -11,3 +11,5 @@ LazyData: true
 RoxygenNote: 7.2.2
 Depends: 
     ggplot2
+URL: https://github.com/kraskura/ggformat2
+BugReports: https://github.com/kraskura/ggformat2/issues
